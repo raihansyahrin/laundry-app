@@ -96,12 +96,17 @@ struct HomeView: View {
                                     .font(.title2)
                                     .bold()
                                 
-                                NavigationLink(destination: DetailsOrderView(statusLaundry: "Ongoing").navigationBarBackButtonHidden(true)){
+                                NavigationLink{
+                                    DetailsOrderView(statusLaundry: "Ongoing")
+                                        .navigationBarBackButtonHidden(true)
+                                        .toolbar(.hidden, for: .tabBar)
+                                }label: {
                                     Text("View Details")
                                         .foregroundColor(.white)
                                         .underline()
                                         .bold()
                                 }
+
                                 
                             }
                             .padding()
@@ -144,7 +149,12 @@ struct HomeView: View {
                         LazyHStack(spacing: 20) {
                             ForEach(0..<3, id: \.self){ listing in
                                 NavigationLink{
-                                    LaundryView().navigationBarBackButtonHidden(true)
+                                    LaundryView()
+                                        .navigationBarBackButtonHidden(true)
+                                        .toolbar(.hidden, for: .tabBar)
+//                                        .toolbar(.hidden, for: .tabBar)
+                                       
+                                      
                                 }label: {
                                     ListingItemView()
                                         .foregroundColor(.black)
