@@ -18,13 +18,15 @@ struct ProfileView: View {
                             .clipShape(Circle())
                             .frame(width: 130, height: 130)
                         
-                        Text("Aisyah Nabilla")
+                        Text("Raihan Syahrin")
+                            .foregroundColor(.black)
                             .font(.title2)
                             .fontWeight(.semibold)
                             .padding(.top, 10)
                         
-                        Text("ID : 031003")
+                        Text("ID : 161003")
                             .fontWeight(.regular)
+                            .foregroundColor(.black)
                     }
                     
                     VStack(alignment: .trailing, spacing: 10){
@@ -42,6 +44,7 @@ struct ProfileView: View {
                 
             }
             .navigationTitle("Profile")
+//            .toolbarBackground(Color.black, for: .navigationBar)
             .background(Color(red: 242 / 255, green: 244 / 255, blue: 247 / 255))
         }
     }

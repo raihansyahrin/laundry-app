@@ -11,7 +11,15 @@ struct HomeView: View {
     @State private var searchText = ""
     @State private var selectedListing: Int? = nil
     
+    init(){
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).backgroundColor = .white
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = .black
+ 
+    }
+    
     var body: some View {
+        
+        
         NavigationStack{
             ScrollView{
                 LazyVStack(spacing: 12){
@@ -63,6 +71,8 @@ struct HomeView: View {
                         
                         Spacer()
                     }
+                    
+                    
                     .padding(.horizontal)
                     .padding(.vertical, 15)
                     

@@ -10,7 +10,7 @@ import SwiftUI
 struct ListChat: View {
     var body: some View {
         NavigationLink{
-            HomeView()
+            Text("Build not yet")
         }label: {
             HStack{
                 //profile image

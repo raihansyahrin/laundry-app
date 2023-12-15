@@ -39,5 +39,5 @@ var ItemBarang = [
     ItemModel(photoItem: "t-shirt", nameItem: "T-Shirt", priceItem: 6, countItem: 1),
     ItemModel(photoItem: "jeans", nameItem: "Jeans", priceItem: 5, countItem: 1),
     ItemModel(photoItem: "jacket", nameItem: "Jacket", priceItem: 4, countItem: 1),
-    ItemModel(photoItem: "Shirt", nameItem: "Shirt", priceItem: 6, countItem: 1)
+    ItemModel(photoItem: "t-shirt", nameItem: "Shirt", priceItem: 6, countItem: 1)
 ]

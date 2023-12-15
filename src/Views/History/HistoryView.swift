@@ -21,14 +21,17 @@ struct HistoryView: View {
                     ListHistory(nameLaundry: "Omah Laundry", statusLaundry: "Completed",imgWashing: "circle.fill", imgCleaning: "circle.fill", imgDrying: "circle.fill", imgDeliver: "circle.fill")
                     
                     ListHistory(nameLaundry: "Bersih Laundry", statusLaundry: "Completed",imgWashing: "circle.fill", imgCleaning: "circle.fill", imgDrying: "circle.fill", imgDeliver: "circle.fill")
-                }   
+                }
+                .navigationTitle("History")
             }
             .padding()
-            .navigationTitle("History")
+//            .toolbarBackground(Color.black, for: .navigationBar)
+            
+            
             .background(Color(red: 242 / 255, green: 244 / 255, blue: 247 / 255))
         }
-        .navigationTitle("History")
-        .background(Color(red: 242 / 255, green: 244 / 255, blue: 247 / 255))
+
+//        .background(Color(red: 242 / 255, green: 244 / 255, blue: 247 / 255))
     }
 }
 

@@ -19,6 +19,7 @@ struct ListHistory: View {
         VStack(spacing: 17){
             HStack{
                 Text(nameLaundry)
+                    .foregroundColor(.black)
                     .font(.title2)
                 Spacer()
                 Text(statusLaundry)

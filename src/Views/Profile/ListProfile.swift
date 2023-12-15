@@ -10,10 +10,11 @@ import SwiftUI
 struct ListProfile: View {
     let img : String
     let nameSetting : String
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         NavigationLink{
-            HomeView()
+            Text("Build not yet")
         }label: {
             HStack(spacing: 20){
                 Image(systemName: img)

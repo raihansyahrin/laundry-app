@@ -29,6 +29,7 @@ struct ListLaundry: View {
                         .foregroundColor(.black)
                     
                     Text("\(item.priceItem) k")
+                        .foregroundColor(.black)
                 }
                 
                 Spacer()
@@ -41,6 +42,7 @@ struct ListLaundry: View {
                         .fontWeight(.ultraLight)
                         .foregroundColor(.black)
                         .frame(width: 30, height: 30)
+                    
                 }
                 
                 
@@ -52,6 +54,7 @@ struct ListLaundry: View {
                 
                 Button{
                     vm.addItem()
+                    
                 }label: {
                     Image(systemName: "plus.circle")
                         .font(.system(size: 30))

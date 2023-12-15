@@ -27,6 +27,7 @@ struct LaundryView: View {
             ScrollView{
                 LazyVStack{
                     Text("Roumah Laundry")
+                        .foregroundColor(.black)
                         .font(.title)
                         .fontWeight(.semibold)
                         .padding()
@@ -61,7 +62,7 @@ struct LaundryView: View {
                         .frame(width: 160, height: 40)
                         .background(
                             RoundedRectangle(cornerRadius: 10)
-                                .strokeBorder(Color(.systemGray5), lineWidth: 1)
+                                .strokeBorder(Color(.systemGray6), lineWidth: 1)
                                 .background(RoundedRectangle(cornerRadius: 10).foregroundStyle(Color.white))
                         )
                     }
@@ -80,6 +81,7 @@ struct LaundryView: View {
                             Text("Order list")
                                 .font(.title3)
                                 .fontWeight(.semibold)
+                                .foregroundColor(.black)
                             Spacer()
                             Button("Add category"){
                                 print("add category")
@@ -90,7 +92,6 @@ struct LaundryView: View {
                         
                         VStack(spacing: 20){
                             ListLaundry()
-                           
                         }
                         
                     }
@@ -101,6 +102,7 @@ struct LaundryView: View {
                     Spacer()
                    
                 }
+                .background(.white)
                 .padding(.top, 20)
             }
             .navigationBarBackButtonHidden(true)
@@ -116,6 +118,7 @@ struct LaundryView: View {
                         .font(.system(size: 25))
                 }
             }
+            
 //            .background(Color(red: 242 / 255, green: 244 / 255, blue: 247 / 255))
         }
     }

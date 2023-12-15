@@ -51,6 +51,7 @@ struct ChatView: View {
                 }
                 
                 .navigationTitle("Chats")
+                .toolbarBackground(Color.black, for: .navigationBar)
                 .listStyle(GroupedListStyle())
                 .background(Color(red: 242 / 255, green: 244 / 255, blue: 247 / 255))
             }
